@@ -1,0 +1,247 @@
+.blog-wrapper * {
+  box-sizing: border-box;
+}
+
+.blog-wrapper {
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(180deg, rgba(25, 104, 188, 0), rgba(5, 117, 117, 0.5), rgba(5, 117, 117, 0.5), rgba(25, 104, 188, 0));
+}
+
+.blog-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-heading h2 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 2rem;
+  letter-spacing: 0.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.blog-heading h2:first-of-type {
+  color: rgb(77, 99, 120);
+}
+
+.blog-heading i {
+  font-size: 8rem;
+  padding: 0.775rem 0;
+  display: block;
+  color: rgb(77, 99, 120);
+  animation: grow 0.7s linear infinite alternate;
+}
+
+.blog-heading button {
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  margin: 4rem auto;
+  padding: 0.2rem 2rem;
+  border: 5px ridge rgb(129, 133, 169);
+  border-radius: 0.4rem;
+  background-color: rgba(65, 75, 180, 0.6);
+  transition: all 0.5s;
+}
+
+.blog-heading button:hover {
+  background-color: rgba(65, 75, 180, 0.3);
+}
+
+.blog-heading button:active {
+  background-color: rgba(65, 75, 180, 0.5);
+  padding: 0rem 1rem;
+}
+
+.blog-content {
+  width: 48vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.blogs {
+  display: flex;
+  position: absolute;
+  animation: sliding-blog 18s linear infinite alternate;
+}
+
+.blog {
+  width: 48vw;
+  border: 1px dotted black;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(5, 117, 117, 0.5), rgba(5, 117, 117, 0));
+}
+
+.blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.blog h3 {
+  margin: 0 1rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.15rem;
+}
+
+.blog button {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  background-color: rgb(65, 75, 180);
+  transition: background-color 0.5s;
+}
+
+.blog button:hover {
+  background-color: rgba(65, 75, 180, 0.5);
+}
+
+@keyframes sliding-blog {
+  100% {
+    transform: translateX(-77rem);
+  }
+}
+
+@keyframes sliding-blog-for-tablet {
+  100% {
+    transform: translateX(-56.5rem);
+  }
+}
+
+@keyframes grow {
+  100% {
+    font-size: 9.55rem;
+    padding: 0;
+    color: gray;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .blog-wrapper {
+    padding: 5rem 0;
+  }
+
+  .blog-heading h2 {
+    font-size: 2.5rem;
+    padding-right: 2rem;
+  }
+
+  .blog-heading i {
+    font-size: 7rem;
+  }
+
+  .blog-heading button {
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    margin: 1rem auto;
+  }
+
+  .blog-heading button:active {
+    padding: 0rem 0.8rem;
+  }
+  
+  .blog-content {
+    width: 45vw;
+  }
+
+  .blogs {
+    animation: sliding-blog-for-tablet 18s linear infinite alternate;
+  }
+
+  .blog {
+    width: 45vw;
+  }
+
+  .blog img {
+    height: 200px;
+  }
+
+  .blog h3 {
+    margin: 0 0.6rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .blog button {
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .blog-wrapper {
+    display: block;
+    margin-bottom: 5rem;
+  }
+
+  .blog-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .blog-heading i {
+    display: none;
+  }
+
+  .blog-heading button {
+    margin: 0;
+    position: relative;
+    top: 60rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .blog-heading button:active {
+    padding: 0.2rem 1rem;
+  }
+
+  .blog-content {
+    width: 100%;
+    position: static;
+  }
+
+  .blogs {
+    animation: none;
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .blog img {
+    height: 200px;
+  }
+
+  .blog h3 {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .blog button {
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (max-width: 646px) {
+  .blog-heading button {
+    top: 65rem;
+  }
+}
+
+@media all and (max-width: 352px) {
+  .blog-heading button {
+    top: 68rem;
+  }
+}
