@@ -1,0 +1,215 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.head-product {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Lucida Grande"
+}
+
+.filter {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.catalog {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn {
+    float: right;
+}
+
+.qty {
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px;
+    background-color: lightgreen;
+    display: block;
+    opacity: 0.8;
+    border-radius: 8px;
+    border: 1px solid black;
+    float: left;    
+    box-shadow: 0 5px #1a7940;
+}
+
+.qty:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.add {
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 10px;
+    background-color: lightgreen;
+    display: block;
+    opacity: 0.8;
+    border-radius: 8px;
+    border: 1px solid black;
+    float: left;
+    box-shadow: 0 5px #1a7940;
+}
+
+.add:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.text-qty {
+    float: left;
+}
+
+.btn:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.card {
+    width: 40%;
+    height: 100%;
+    max-height: 500px;
+    border: 1px solid grey;
+    padding: 10px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-family: "Lucida Grande";
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    border-radius: 15px;
+}
+
+.img-product {
+    width: 200px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 10px;
+    float: left;
+    transition: transform .5s ease;
+}
+
+.img-product:hover {
+    transform: scale(1.2);
+}
+
+.nama-product {
+    text-align: center;
+    font-size: 20px;
+}
+
+.desc {
+    font-size: 20px;
+    height: 100%;
+    max-height: 220px;
+    text-align: justify;
+    padding: 5px;
+    overflow: auto;
+}
+
+.price {
+    padding: 0;
+    font-weight: bold;
+    font-size: 28px;
+    float: left;
+    margin: 10px;
+}
+
+.info span a {
+    color: blue;
+}
+
+.info span a:hover {
+    font-weight: bold;
+    cursor: point;
+}
+
+
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    .catalog {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        margin: 10px 30px;
+        float: left;
+    }
+    .desc {
+        font-size: 20px;
+        height: 100%;
+        max-height: 200px;
+        overflow: auto;
+    }
+}
+
+/* Untuk HP */
+@media all and (max-width: 670px) {
+    .catalog, .head-product {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        margin: 5px;
+        height: 100%;
+        padding: 0px 10px 0px 0px;
+    }
+    .desc {
+        height: 100%;
+        max-height: 100px;
+        overflow: auto;
+        font-size: 12px;
+        text-align: start;
+    }
+
+    .img-product {
+        width: 40%;
+        margin-left: 5px;
+    }
+
+    .price {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .qty {
+        width: 25px;
+        height: 12px;
+        text-align: center;
+        padding: 5px 0;
+        font-size: 10px;
+    }
+
+    .add {
+        width: 35px;
+        height: 12px;
+        text-align: center;
+        padding: 5px 0;
+        font-size: 10px;
+    }
+
+    .text-qty {
+        font-size: 15px;
+    }
+
+    .nama-product {
+        font-size: 15px;
+    }
+}
