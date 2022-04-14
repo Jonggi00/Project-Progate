@@ -1,4 +1,3 @@
-/* Reset CSS (JANGAN DIHAPUS) */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,6 @@ a {
   text-decoration: none;
 }
 
-/* Ketik code Anda dibawah */
 header{
   height: 65px;
   width: 100%;
