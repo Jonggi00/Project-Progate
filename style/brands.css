@@ -56,63 +56,63 @@
 } 
 
 .yamaha {
-  background-image: url("image/brands/yamaha-logo.png");
+  background-image: url("../image/brands/yamaha-logo.png");
 }
 
 .fender {
-  background-image: url("image/brands/fender-logo.png");
+  background-image: url("../image/brands/fender-logo.png");
 }
 
 .cort {
-  background-image: url("image/brands/cort-logo.png");
+  background-image: url("../image/brands/cort-logo.png");
 }
 
 .ibanez {
-  background-image: url("image/brands/ibanez-logo.png");
+  background-image: url("../image/brands/ibanez-logo.png");
 }
 
 .pearl {
-  background-image: url("image/brands/pearl-logo.png");
+  background-image: url("../image/brands/pearl-logo.png");
 }
 
 .adams {
-  background-image: url("image/brands/adams-logo.png");
+  background-image: url("../image/brands/adams-logo.png");
 }
 
 .gibson {
-  background-image: url("image/brands/gibson-logo.png");
+  background-image: url("../image/brands/gibson-logo.png");
 }
 
 .korg {
-  background-image: url("image/brands/korg-logo.png");
+  background-image: url("../image/brands/korg-logo.png");
 }
 
 .kramer-guitar {
-  background-image: url("image/brands/kramer-guitar-logo.png");
+  background-image: url("../image/brands/kramer-guitar-logo.png");
 }
 
 .taylor {
-  background-image: url("image/brands/taylor-logo.png");
+  background-image: url("../image/brands/taylor-logo.png");
 }
 
 .casio {
-  background-image: url("image/brands/casio-logo.png");
+  background-image: url("../image/brands/casio-logo.png");
 }
 
 .epiphone {
-  background-image: url("image/brands/epiphone-logo.png");
+  background-image: url("../image/brands/epiphone-logo.png");
 }
 
 .peavey {
-  background-image: url("image/brands/peavey-logo.png");
+  background-image: url("../image/brands/peavey-logo.png");
 }
 
 .hohner {
-  background-image: url("image/brands/hohner-logo.png");
+  background-image: url("../image/brands/hohner-logo.png");
 }
 
 .getzen {
-  background-image: url("image/brands/getzen-logo.png");
+  background-image: url("../image/brands/getzen-logo.png");
 }
 
 @media all and (max-width: 1000px) {
