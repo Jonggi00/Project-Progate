@@ -9,7 +9,7 @@
 }
 
 .form{
-    background-color: pink;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 224, 0), rgb(255, 255, 224), rgb(247, 247, 175), rgb(255, 255, 224), rgb(247, 247, 175), rgb(255, 255, 224), rgba(255, 255, 224, 0));
     width: 100%;
     padding: 35px;
     display:flex;
@@ -33,7 +33,7 @@
 }
 
 .btn{
-  background-color:#ff006f;
+  background-color:#eab1e9;
   color:black;
   width:100px;
   padding:10px;
