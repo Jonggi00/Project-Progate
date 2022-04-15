@@ -8,7 +8,7 @@
 }
 
 .brand-heading {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .brand-heading span:first-of-type {
@@ -46,6 +46,7 @@
   align-self: center;
   width: 200px;
   height: 200px;
+  box-shadow: 0 0 20px 10px rgb(30, 14, 5);
   transition: all 0.5s;
 }
 
