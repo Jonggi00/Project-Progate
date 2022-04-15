@@ -103,6 +103,7 @@ header{
 }
 .header-top{
   width: 1170px;            
+	max-width: 100%;
   margin: 0 auto
 }
 .header-top h1{
